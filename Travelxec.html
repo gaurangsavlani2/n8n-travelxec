@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraveXec Images</title>
+    <!-- Include Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 flex items-center justify-center min-h-screen">
+    <div class="flex flex-col items-center p-8 space-y-8">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white text-center">TraveXec Images</h1>
+        <a href="#" id="action-button" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50">
+            Click Me
+        </a>
+    </div>
+
+    <script>
+        // You can replace the '#' in the href above with your desired URL.
+        // For example:
+        // const button = document.getElementById('action-button');
+        // button.href = 'https://www.example.com';
+        
+        // You can also change the button's text here:
+        // button.textContent = 'Go to Example';
+        
+        // This is a placeholder for your URL. You can modify this.
+        document.getElementById('action-button').addEventListener('click', function(event) {
+            // Check if the href is '#' which is a placeholder
+            if (this.getAttribute('href') === '#') {
+                event.preventDefault(); // Prevent the default action (page reload)
+                console.log('Button clicked! Please replace the placeholder URL with your own.');
+                // You can add a visual message to the user here instead of just logging to the console.
+                // For example:
+                // const message = document.createElement('div');
+                // message.textContent = 'Please update the link!';
+                // message.className = 'text-red-500 mt-4';
+                // document.body.appendChild(message);
+            }
+        });
+    </script>
+</body>
+</html>
